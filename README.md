@@ -1,1 +1,1 @@
-# code-repo
+# code-repo for data and structure algorithms
