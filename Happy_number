@@ -16,4 +16,5 @@ def isHappy(n: int) -> bool:
     
 """
 isHappy(19)
+> true
 """
