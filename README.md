@@ -1,1 +1,1 @@
-# Code repo for data and structure algorithms practice questions with python as primary language
+Code repo for data and structure algorithms practice questions with python as primary language
