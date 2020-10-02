@@ -21,14 +21,12 @@ class Solution:
         def maxD(root, depth):
             # leaf node
             if root.left is None and root.right is None:
-                return max(depth, self.max_d)
-            l_d = maxD(root.left, depth + 1)
-            r_d = maxD(root.right, depth + 1)
-            self.max_d = max(l_d, r_d)
-            return self.max_d + 1
+                self.max_d = max(depth + 1, self.max_d)
+            if root.left: maxD(root.left, depth + 1)
+            if root.right: maxD(root.right, depth + 1)
             
         if root is None:
-            return        
+            return 0    
         self.max_d, self.curr_d = 0, 0
         maxD(root, self.curr_d)
         return self.max_d
